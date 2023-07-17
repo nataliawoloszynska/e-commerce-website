@@ -1,0 +1,298 @@
+/* Site Settings */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffbf8;
+  color: #514c49;
+  /* font-family: "Lora", serif;
+  font-size: 16px;
+  font-weight: 400; */
+}
+
+.content-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.App {
+  font-family: "Lora", serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.logo {
+  width: 250px;
+  height: 100px;
+  background-image: url("../assets/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: center;
+}
+
+.user-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.user-menu a {
+  color: #514c49;
+}
+
+/* Navbar */
+
+.navbar-container {
+  display: none;
+}
+
+.nav-category li {
+  list-style: none;
+}
+
+.nav-category a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #514c49;
+}
+
+/* Landing Page */
+
+.main-content-container {
+  display: flex;
+  align-items: flex-end;
+  background-image: url("../assets/sale4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  margin-bottom: 30px;
+}
+
+.landing-page {
+  display: flex;
+  width: 500px;
+  flex-wrap: wrap;
+}
+
+.landing-page-text {
+  color: #fffbf8;
+  text-shadow: 0 0 10px #514c49;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 20px 50px;
+}
+
+.landing-page-btn {
+  background-color: #fffbf8;
+  padding: 20px 40px;
+  border: 1px solid #675c58;
+  font-weight: 600;
+  color: #675c58;
+  margin: 0 0 50px 50px;
+  text-decoration: none;
+}
+
+/* Items Sites */
+
+.items-site-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-tile-container {
+  width: 260px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-photo {
+  background-image: url("../assets/sale.jpg");
+  width: 100%;
+  height: 80%;
+}
+
+.item-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.item-name,
+.item-price {
+  font-weight: 600;
+}
+
+.item-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 10px 0;
+}
+
+.item-icon {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+/* Footer */
+
+.footer-container {
+  background-color: #e3d5ca;
+}
+
+.footer-category-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0 30px 0;
+  border-bottom: 1px solid;
+}
+
+.category-header {
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.footer-list-item {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.footer-list-item a {
+  text-decoration: none;
+  color: #514c49;
+}
+
+.footer-sm {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px 0 30px 0;
+}
+
+.footer-sm a {
+  color: #514c49;
+}
+
+.sm-icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* Footer - FAQ Site, Delivery Site, Returns Site, About Site, Regulations Site, Contact Site */
+
+.faq,
+.delivery,
+.returns,
+.about,
+.regulations {
+  margin-bottom: 40px;
+}
+
+.faq-header,
+.delivery-header,
+.returns-header,
+.about-header,
+.regulations-header,
+.contact-header {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.faq-question,
+.delivery-question {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.faq-answer,
+.delivery-answer,
+.returns-answer,
+.about-answer,
+.regulations-answer {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.contact-input {
+  width: 50%;
+  height: 300px;
+  line-height: 1.5;
+}
+
+.contact-btn {
+  background-color: #fffbf8;
+  width: 100px;
+  padding: 10px 20px;
+  border: 1px solid #675c58;
+  font-family: "Lora", serif;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+/* Media-Queries */
+
+@media screen and (min-width: 600px) {
+  /* Items Sites */
+
+  .items-site-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .item-tile-container {
+    justify-self: center;
+  }
+}
+
+@media screen and (min-width: 996px) {
+  /* Header */
+
+  .nav-menu {
+    display: none;
+  }
+
+  /* Navbar */
+
+  .navbar-container {
+    display: block;
+    height: 50px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Items Sites */
+
+  .items-site-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .item-tile-container {
+    justify-self: center;
+  }
+}
